@@ -1,0 +1,53 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Chelsea Market", system-ui;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  border: 2px solid blue;
+  background: linear-gradient(rgb(215, 233, 238), rgb(99, 99, 235));
+}
+.title {
+  margin: 20px;
+  text-align: center;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  transition:
+    transform 0.2s ease,
+    background-color 0.3s ease;
+  color: #2290eb;
+
+  &&:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+}
+.btnVolver {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eb6222;
+  background: linear-gradient(rgb(215, 233, 238), rgb(174, 174, 228));
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  .btn{
+    width: 50%;
+    font-size: 14px;
+  }
+}

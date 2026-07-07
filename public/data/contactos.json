@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "imagen": "./images/contacto1.jpg",
+        "nombre": "Sergio",
+        "apellido": "Perez",
+        "email": "[EMAIL_ADDRESS]",
+        "telefono": "123456789",
+        "profesion": "Marketing"
+    },
+    {
+        "id": 2,
+        "imagen": "./images/contacto2.jpg",
+        "nombre": "Maria",
+        "apellido": "Gomez",
+        "email": "[EMAIL_ADDRESS]",
+        "telefono": "987654321",
+        "profesion": "Ventas"
+    },
+    {
+        "id": 3,
+        "imagen": "./images/contacto3.jpg",
+        "nombre": "Sebastian",
+        "apellido": "Ramirez",
+        "email": "[EMAIL_ADDRESS]",
+        "telefono": "123456789",
+        "profesion": "Atencion al cliente"
+    },
+    {
+        "id": 4,
+        "imagen": "./images/contacto4.jpg",
+        "nombre": "Ana",    
+        "apellido": "Perez",
+        "email": "[EMAIL_ADDRESS]",
+        "telefono": "123456789",
+        "profesion": "Diseñador"
+    }
+]

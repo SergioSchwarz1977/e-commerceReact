@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.title{
+  text-align: center;
+  font-size: 30px;
+  background: linear-gradient(to right, #007bff, #8eddf3);
+
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(white, blue);
+  background-image: url(https://i.pinimg.com/736x/d0/1f/35/d01f35cc658771824935d990540b9253.jpg);
+}
+h {
+  color: #faf5f5;
+}
+.loginForm {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  gap: 20px;
+  border: 2px solid #007bff;
+  box-shadow: 0 4px 8px rgba(231, 6, 6, 0.9);
+  padding: 30px;
+}
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.label {
+  font-size: 18px;
+  color: #faf5f5;
+  text-align: left;
+  width: 100%;
+}
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f8f9fa;
+}
+.loginActions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 20px;
+}
+.rememberMe {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.loginButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+
+  &&:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s ease;
+    transform: scale(1.05);
+  }
+}
+.forgotPassword {
+  margin-top: 20px;
+  gap: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.cancelButton {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  gap: 10px;
+  margin-left: 20px;
+
+  &&:hover {
+    background-color: #c82333;
+    transition: background-color 0.3s ease;
+    transform: scale(1.05);
+  }
+}
+@media (max-width: 768px) {
+  .formGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+  }
+  h1 {
+    font-size: 15px;
+    margin: 10px;
+  }
+  .label {
+    font-size: 15px;
+    text-align: center;
+  }
+  .input {
+    font-size: 10px;
+  }
+  .forgotPassword{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    font-size: 16px;
+  }
+  .loginButton {
+    text-align: center;
+    font-size: 11px;
+    width: 100%;
+  }
+  .cancelButton {
+    text-align: center;
+    font-size: 11px;
+    width: 100%;
+  }
+  a{
+    font-size: 15px;
+  }
+
+}
