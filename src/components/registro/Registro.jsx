@@ -1,5 +1,5 @@
 import styles from "./Registro.module.css";
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 export const Registro = () => {
@@ -20,9 +20,11 @@ export const Registro = () => {
           "Este correo electrónico ya está registrado. ¿Desea intentar iniciar sesión ? ",
         );
         if (quiereLoguearse) {
+          // eslint-disable-next-line no-undef
           login;
           navigate("/login");
         } else {
+          // eslint-disable-next-line no-undef
           inicio;
           navigate("/");
         }

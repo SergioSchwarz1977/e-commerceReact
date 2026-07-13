@@ -1,6 +1,4 @@
-import { Route, Router, Routes } from "react-router-dom";
-import Header from "./components/header/Header";
-import { Footer } from "./components/footer/Footer";
+import { Route, Routes } from "react-router-dom";
 import { Layout } from "./components/Layout";
 import { Home } from "./components/home/Home";
 import { Cart } from "./components/cart/Cart";
@@ -9,10 +7,10 @@ import { ItemDetalle } from "./components/productos/ItemDetalle";
 import { Login } from "./components/login/Login";
 import { Contacto } from "./components/contacto/Contacto";
 import { Importados } from "./components/importados/Importados";
-import { Menu } from "./components/gestion/Menu";
 import { FormularioContainer } from "./components/gestion/form/FormularioContainer";
 import { FormularioConsulta } from "./components/gestion/form/FormularioConsulta";
 import { GestionCupones } from "./components/gestion/GestionCupones";
+import { Menu } from "./components/gestion/Menu";
 import { Registro } from "./components/registro/Registro";
 import { RouteProtected } from "./components/routeProtected/RouteProtected";
 
