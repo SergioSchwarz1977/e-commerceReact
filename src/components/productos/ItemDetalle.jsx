@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Header from "../header/Header";
+import Footer from "../footer/Footer";
 import styles from "./ItemList.module.css";
 import { Link, useParams, useLocation } from "react-router-dom";
 import { useCart } from "../../context/CartContex";
@@ -106,6 +107,7 @@ export const ItemDetalle = () => {
           Volver a Productos
         </Link>
       </div>
+      <Footer />
     </>
   );
 };

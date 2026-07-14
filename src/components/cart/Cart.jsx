@@ -4,6 +4,9 @@ import style from "../cart/Cart.module.css";
 import { useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../../firebase/config";
+import swal from "sweetalert2";
+import Header from "../header/Header";
+import Footer from "../footer/Footer";
 
 
 export const Cart = () => {
@@ -48,6 +51,8 @@ const totalDescuento = getCartTotal() * (1 - descuento / 100);
     );
   }
   return (
+    <>
+    <Header/>
     <div className={style.container}>
       <h1>Carrito de Compras</h1>
       {cartItems.map((item) => (
@@ -110,5 +115,7 @@ const totalDescuento = getCartTotal() * (1 - descuento / 100);
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
